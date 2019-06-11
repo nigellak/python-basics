@@ -50,12 +50,55 @@ new_scores=sorted(scores,key = lambda k :k ["totals"],reverse=True)
 print(new_scores)
 
 #print top ten,bottom ten,average for each student,best subject for each student(new list)
+#worst subject
+#area of equilateral triangle
+#all odd years between 200 and 300
+#all numbers between 1-100, but if you enconter a number that is divisble by 12, print your name
+#prime numbers between 10 and 50
 
 
+top_ten = new_scores[:10]
 
+print(top_ten)
+
+bottom_ten = new_scores[90:]
+
+print(bottom_ten)
+
+for score in new_scores:
+      print(score)
+     # print((score['eng']+score['math']+score['geo']+score['swa']+score['chem'])/5)
+      score['average']=(score['eng']+score['math']+score['geo']+score['swa']+score['chem'])/5
+     # print(average)
 
 
 # sets
 watu=('john','mary','mike','jane','john')
 
+for score in new_scores:
+    # print(score['names'], score['average'])
+    greatest= 'eng'
+    if score['math'] > score['eng']:
+        greatest='math'
+    if score['swa']> score[greatest]:
+        greatest='swa'
+    if score['geo']> score[greatest]:
+        greatest='geo'
+    if score['chem']> score[greatest]:
+        greatest='chem'
 
+    print(greatest, score[greatest], score['names'])
+
+
+for score in new_scores:
+    worst = 'geo'
+    if score['chem'] < score['geo']:
+        worst= 'chem'
+    if score['swa'] < score[worst]:
+        worst= 'swa'
+    if score['eng'] < score[worst]:
+        worst= 'eng'
+    if score['math'] < score[worst]:
+        worst= 'math'
+
+     print(worst, score[worst], score['names'])
