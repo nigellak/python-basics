@@ -60,9 +60,8 @@ print(new_scores)
 top_ten = new_scores[:10]
 
 print(top_ten)
-
-bottom_ten = new_scores[90:]
-
+print(tuple)
+bottom_ten = new_scores[-10:]
 print(bottom_ten)
 
 for score in new_scores:
@@ -101,4 +100,4 @@ for score in new_scores:
     if score['math'] < score[worst]:
         worst= 'math'
 
-     print(worst, score[worst], score['names'])
+    print(worst, score[worst], score['names'])

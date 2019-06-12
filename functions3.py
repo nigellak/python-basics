@@ -1,0 +1,1 @@
+# check if name is in an array
