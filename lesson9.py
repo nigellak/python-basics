@@ -30,7 +30,7 @@ print(volume(7,7, 3.142))
 def sum(x, y):
     total = 0
     for num in range (x, y+1):
-        # print(num)ranges dont add the last num
+        # print(num)ranges don't add the last num
         total = total + num
 
     print(total)
